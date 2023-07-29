@@ -1,5 +1,4 @@
 import Image from "next/image";
-import profilePic from "../../public/Profile.jpg";
 
 const StudioLogo = (props: any) => {
   const { renderDefault, title } = props;
