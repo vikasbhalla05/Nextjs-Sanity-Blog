@@ -32,3 +32,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+[Project Tutorial](https://www.youtube.com/live/x3fCEPFgUSM?feature=share)
+[Basics of Sanity](https://youtu.be/c_8cplBi_gE)
+[What is JAMstack](https://www.cloudflare.com/learning/performance/what-is-jamstack/)
+[What is microservice architecture](https://www.cloudflare.com/learning/serverless/glossary/serverless-microservice/)
