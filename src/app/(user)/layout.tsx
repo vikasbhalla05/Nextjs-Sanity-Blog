@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   description: "Next.js Blog with Sanity V3",
 };
 
+// inter.className;
+
 export default function RootLayout({
   children,
 }: {
@@ -18,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="mx-w-7xl mx-auto">
         {/* Header */}
         <Header />
 
