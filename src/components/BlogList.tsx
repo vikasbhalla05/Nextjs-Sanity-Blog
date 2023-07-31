@@ -15,7 +15,7 @@ const BlogList = ({ posts }: Props) => {
         {posts.map((post) => {
           return (
             <ClientSideRoute
-              route={`/posts/${post.slug.current}`}
+              route={`/post/${post.slug.current}`}
               key={post._id}
             >
               <div className="flex flex-col group cursor-pointer">
