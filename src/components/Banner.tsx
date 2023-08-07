@@ -6,14 +6,14 @@ const Banner = () => {
         <h2 className="mt-5 md:mt-2">
           Welcome to{" "}
           <span className="underline decoration-4 decoration-[#6254f3]">
-            Every Developer's
+            Every Developer&apos;s
           </span>{" "}
           favourite blog in Devosphere
         </h2>
       </div>
       <p className="mt-5 md:mt-2 text-gray-400 max-w-sm">
         New product features | The latest in technology | The weekly debugging
-        nightmares & more !
+        nightmares &amp; more !
       </p>
     </div>
   );
