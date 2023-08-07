@@ -2,12 +2,28 @@ import { groq } from "next-sanity";
 import { client } from "../../../../../sanity/lib/client";
 import Image from "next/image";
 import urlFor from "../../../../../sanity/lib/urlFor";
+import { PortableText } from "@portabletext/react";
+import { RichTextComponents } from "@/components/RichTextComponents";
 
 type Prop = {
   params: {
     slug: string;
   };
 };
+
+export const revalidate = 60; // revalidate this page every 60 sec
+
+// generate slug routes array of strings for static site generation
+export async function generateStaticParams() {
+  const query = groq`*[_type=='post']{slug}`;
+
+  const slug: Post[] = await client.fetch(query);
+  const slugRoutes = slug.map((slug) => slug.slug.current);
+
+  return slugRoutes.map((slug) => ({
+    slug,
+  }));
+}
 
 export default async function Post({ params: { slug } }: Prop) {
   const query = groq`
@@ -79,6 +95,8 @@ export default async function Post({ params: { slug } }: Prop) {
           </section>
         </div>
       </section>
+
+      <PortableText value={post.body} components={RichTextComponents} />
     </article>
   );
 }
